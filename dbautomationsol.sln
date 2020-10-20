@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbautomation", "dbautomation\dbautomation.csproj", "{8F50642F-3CA7-4BE5-8AAC-5772F464E858}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F50642F-3CA7-4BE5-8AAC-5772F464E858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F50642F-3CA7-4BE5-8AAC-5772F464E858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F50642F-3CA7-4BE5-8AAC-5772F464E858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F50642F-3CA7-4BE5-8AAC-5772F464E858}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CF05452-F95A-4A9E-9FF2-485C500BB546}
+	EndGlobalSection
+EndGlobal
