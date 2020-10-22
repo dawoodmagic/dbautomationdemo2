@@ -12,7 +12,7 @@ Scenario: Add two numbers
 
 
 
-	@mytag2
+@mytag2
 Scenario: Verify Currency Field Mapping for MIFID feed
 	Given Source feed file is copied to Incoming folder Listner
 	And Wait till Records gets processed into the DB

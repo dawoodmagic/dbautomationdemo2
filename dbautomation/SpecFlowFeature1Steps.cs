@@ -74,11 +74,43 @@ namespace dbautomation
                     NpgsqlCommand command = new NpgsqlCommand("SELECT name,age,address FROM public.company", con);
                     NpgsqlDataReader dr = command.ExecuteReader();
                     while (dr.Read())
-                        Console.Write("{0}\t{1} \n", dr[0], dr[1], dr[2]);
+                        Console.Write("{0}\t{1} \n", dr[0]);
+
+
+               
                     con.Close();
                 }
             }
         }
+       
+        public void reader()
+        {
+            using (NpgsqlConnection con = GetConncection())
+
+            {
+                con.Open();
+                string dataItems;
+                if (con.State == ConnectionState.Open)
+                {
+                    Console.WriteLine("Yeah Connected");
+                    NpgsqlCommand command = new NpgsqlCommand("SELECT name,age,address FROM public.company", con);
+                    NpgsqlDataReader dr = command.ExecuteReader();
+                    for (int i=0; dr.Read(); i++)
+                    {
+                        dataItems = dr[0].ToString();
+                        Console.WriteLine(dataItems);
+                   
+                    }
+
+
+                    while (dr.Read())
+                        Console.Write("{0}\t{1} \n", dr[0]);
+                
+                    con.Close();
+                }
+            }
+        }
+
 
         private static NpgsqlConnection GetConncection()
         {
